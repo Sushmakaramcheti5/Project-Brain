@@ -1,0 +1,390 @@
+
+(object Petal
+    version    	42
+    _written   	"Rose 4.5.8054a"
+    charSet    	0)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"6061499E0117"
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	1
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"6061499E0119"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"6061499E0165"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"6061499E0118"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"6061499E011A"
+	logical_models 	(list unit_reference_list
+	    (object Class "User"
+		quid       	"606149A000E4"
+		stereotype 	"Actor")
+	    (object UseCase "Upload MRI Images Dataset"
+		quid       	"606149AB0326")
+	    (object UseCase "Generate Images Train & Test Model"
+		quid       	"606149B402C4")
+	    (object UseCase "Generate Deep Learning CNN Model"
+		quid       	"606149C2000E")
+	    (object UseCase "Get DriveHQ Images"
+		quid       	"606149CB00AC")
+	    (object UseCase "Predict Tumor"
+		quid       	"606149DA0282")
+	    (object Association "$UNNAMED$0"
+		quid       	"606149E000B9"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$1"
+			quid       	"606149E10110"
+			supplier   	"Logical View::Upload MRI Images Dataset"
+			quidu      	"606149AB0326"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$2"
+			quid       	"606149E10111"
+			supplier   	"Logical View::User"
+			quidu      	"606149A000E4"
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$3"
+		quid       	"606149E30308"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$4"
+			quid       	"606149E40296"
+			supplier   	"Logical View::Generate Images Train & Test Model"
+			quidu      	"606149B402C4"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$5"
+			quid       	"606149E40297"
+			supplier   	"Logical View::User"
+			quidu      	"606149A000E4"
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$6"
+		quid       	"606149E7002E"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$7"
+			quid       	"606149E7023A"
+			supplier   	"Logical View::Generate Deep Learning CNN Model"
+			quidu      	"606149C2000E"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$8"
+			quid       	"606149E7023B"
+			supplier   	"Logical View::User"
+			quidu      	"606149A000E4"
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$9"
+		quid       	"606149E9023E"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$10"
+			quid       	"606149EA0123"
+			supplier   	"Logical View::Get DriveHQ Images"
+			quidu      	"606149CB00AC"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$11"
+			quid       	"606149EA0124"
+			supplier   	"Logical View::User"
+			quidu      	"606149A000E4"
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$12"
+		quid       	"606149EC0039"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$13"
+			quid       	"606149EC0371"
+			supplier   	"Logical View::Predict Tumor"
+			quidu      	"606149DA0282"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$14"
+			quid       	"606149EC0372"
+			supplier   	"Logical View::User"
+			quidu      	"606149A000E4"
+			is_navigable 	TRUE))))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"6061499E0128"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object UseCaseView "Logical View::Upload MRI Images Dataset" @1
+			location   	(1600, 144)
+			label      	(object ItemLabel
+			    Parent_View 	@1
+			    location   	(1600, 282)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Upload MRI Images Dataset")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"606149AB0326"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Logical View::Generate Images Train & Test Model" @2
+			location   	(1616, 400)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(1616, 538)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Generate Images Train & Test Model")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"606149B402C4"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Logical View::Generate Deep Learning CNN Model" @3
+			location   	(1632, 672)
+			label      	(object ItemLabel
+			    Parent_View 	@3
+			    location   	(1632, 810)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Generate Deep Learning CNN Model")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"606149C2000E"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Logical View::Get DriveHQ Images" @4
+			location   	(1664, 1008)
+			label      	(object ItemLabel
+			    Parent_View 	@4
+			    location   	(1664, 1146)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Get DriveHQ Images")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"606149CB00AC"
+			height     	118
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::User" @5
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(592, 736)
+			label      	(object ItemLabel
+			    Parent_View 	@5
+			    location   	(592, 896)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	327
+			    justify    	0
+			    label      	"User")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"606149A000E4"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$0" @6
+			location   	(999, 493)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"606149E000B9"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$1" @7
+				Parent_View 	@6
+				location   	(55, -115)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"606149E10110"
+				client     	@6
+				supplier   	@1
+				line_style 	0)
+			    (object RoleView "$UNNAMED$2" @8
+				Parent_View 	@6
+				location   	(55, -115)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"606149E10111"
+				client     	@6
+				supplier   	@5
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$3" @9
+			location   	(997, 598)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"606149E30308"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$4" @10
+				Parent_View 	@9
+				location   	(53, -10)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"606149E40296"
+				client     	@9
+				supplier   	@2
+				line_style 	0)
+			    (object RoleView "$UNNAMED$5" @11
+				Parent_View 	@9
+				location   	(53, -10)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"606149E40297"
+				client     	@9
+				supplier   	@5
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$6" @12
+			location   	(1085, 702)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"606149E7002E"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$7" @13
+				Parent_View 	@12
+				location   	(141, 94)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"606149E7023A"
+				client     	@12
+				supplier   	@3
+				line_style 	0)
+			    (object RoleView "$UNNAMED$8" @14
+				Parent_View 	@12
+				location   	(141, 94)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"606149E7023B"
+				client     	@12
+				supplier   	@5
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$9" @15
+			location   	(1101, 862)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"606149E9023E"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$10" @16
+				Parent_View 	@15
+				location   	(157, 254)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"606149EA0123"
+				client     	@15
+				supplier   	@4
+				line_style 	0)
+			    (object RoleView "$UNNAMED$11" @17
+				Parent_View 	@15
+				location   	(157, 254)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"606149EA0124"
+				client     	@15
+				supplier   	@5
+				line_style 	0)))
+		    (object UseCaseView "Logical View::Predict Tumor" @18
+			location   	(1664, 1264)
+			label      	(object ItemLabel
+			    Parent_View 	@18
+			    location   	(1664, 1402)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Predict Tumor")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"606149DA0282"
+			height     	118
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$12" @19
+			location   	(1101, 985)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"606149EC0039"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$13" @20
+				Parent_View 	@19
+				location   	(157, 377)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"606149EC0371"
+				client     	@19
+				supplier   	@18
+				line_style 	0)
+			    (object RoleView "$UNNAMED$14" @21
+				Parent_View 	@19
+				location   	(157, 377)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"606149EC0372"
+				client     	@19
+				supplier   	@5
+				line_style 	0)))))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"6061499E011A"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"6061499E0164"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"6061499E011B"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"6061499E011D"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"6061499E011C"))
